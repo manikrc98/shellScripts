@@ -1,0 +1,3 @@
+Name Subject Roll Gender
+Manik BCA 1641118 Male
+Ashwin BCA 1641114 Female
