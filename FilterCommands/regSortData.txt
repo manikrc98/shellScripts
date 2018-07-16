@@ -1,0 +1,7 @@
+Regno Name Mark1 Mark2 Total Result
+1540101 mahdi 60 90 150 Pass
+1540116 senthil 10 20 30 Fail
+1641106 Akshat 80 100 180 Pass
+1641114 ashwin 90 0 90 Fail
+1641117 chahat 100 100 200 Pass
+1641118 manik 0 80 80 Pass

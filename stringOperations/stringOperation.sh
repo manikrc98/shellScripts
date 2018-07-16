@@ -38,7 +38,7 @@ case $input in
 		;;
 	5)
 		read -p "Enter the position: " pos
-		read -p "Enter the length: " lend
+		read -p "Enter the length: " len
 		echo ${stringInput:$pos:$len}
 		;;
 	6) 
@@ -53,14 +53,21 @@ case $input in
 		fi
 		;;
 	7)
-		read -p "Please Enter a Character to check whether it exists in $stringInput or not" c
-		for(( i=0;i<${#stringInput};i++ ))
+		read -p "Please Enter a Character to check whether it exists in $stringInput or not:" c
+		f=0
+	       	for(( i=0;i<${#stringInput};i++ ))
 		do
-			if [ "$c" = "${#stringInput:$i:1}" ]; then
-				echo "$c Exists"
-			fi
-		done
-		;;
+			if [ "$c" == "${stringInput:$i:1}" ]; then
+                                echo "$c Exists"
+				let f=$f+1
+				break	
+                        fi
+                done
+		if [ $f -eq 0 ]; then
+			echo "Character not found"
+		fi
+                ;;
+
 	8)
 		echo "Enter a String"
 		read str
