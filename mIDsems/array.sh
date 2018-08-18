@@ -1,0 +1,25 @@
+#! /bin/bash
+read -p "Enter the desirable size for the array: " arraySize
+for(( i=0; i<$arraySize; i++ ))
+do
+        read -p "Enter element $((i+1)) : " arr[$i]
+done
+while :
+do
+read -p "
+1. DISPLAY ALL ARRAY ELEMENTS
+2. DISPLAY ALL ELEMENTS IN A RANGE
+3. DISPLAY THE NUMBER OF ARRAY ELEMENTS
+4. REPLACE A SUBSTRING IN AN ARRAY ELEMENT
+5. SORT AND DISPLAY THE ARRAY ELEMENT IN ASCENDING ORDER AND
+DESCENDING ORDER
+6. COPY AN ARRAY ELEMENTS TO ANOTHER ARRAY
+7. DISPLAY THE SUM AND AVERAGE OF ODD POSITION ELEMENTS AND EVEN
+POSITION ELEMENTS OF AN ARRAY AND FIND WHICH POSITION NUMBERS ARE
+HAVING GREATER AVERAGE " inputOption
+case $inputOption in
+	1)
+		echo ${arr[@]}
+		;;
+esac
+done
