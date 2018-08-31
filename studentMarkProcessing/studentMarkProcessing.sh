@@ -34,7 +34,3 @@ case $input in
 		;;
 esac
 done
-
-mysql studentDetails -u root -p <<EOFMYSQL
-
-EOFMYSQL
